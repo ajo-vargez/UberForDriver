@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Title-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginVC" customModule="UberForDriver" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="e-mail ID" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wWP-As-0Q3">
+                                <rect key="frame" x="16" y="152.5" width="343" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="KaB-8a-3Ue"/>
+                                </constraints>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="email"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cvd-dy-tdk">
+                                <rect key="frame" x="16" y="219.5" width="343" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="D81-fV-Czc"/>
+                                </constraints>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="go" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4GP-WM-jrp">
+                                <rect key="frame" x="16" y="286.5" width="165" height="68"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="Axo-Cq-ZOe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SinhalaSangamMN-Bold" family="Sinhala Sangam MN" pointSize="22"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" red="0.0" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signIN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K1h-wG-For"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Yj-4k-IUJ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="barTintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="SinhalaSangamMN-Bold" family="Sinhala Sangam MN" pointSize="20"/>
+                                    <color key="textColor" red="0.0" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Drivers" id="PVB-xH-jb2"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gb3-8S-h30">
+                                <rect key="frame" x="194" y="286.5" width="165" height="68"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="SinhalaSangamMN-Bold" family="Sinhala Sangam MN" pointSize="22"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="0.0" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signUP:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ckL-59-yov"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UBER Partner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iI3-pG-B61">
+                                <rect key="frame" x="16" y="64" width="343" height="56.5"/>
+                                <fontDescription key="fontDescription" name="SinhalaSangamMN-Bold" family="Sinhala Sangam MN" pointSize="42"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.0" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="8Yj-4k-IUJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1ir-gx-Dv3"/>
+                            <constraint firstItem="gb3-8S-h30" firstAttribute="height" secondItem="4GP-WM-jrp" secondAttribute="height" id="1oY-an-QTr"/>
+                            <constraint firstItem="cvd-dy-tdk" firstAttribute="top" secondItem="wWP-As-0Q3" secondAttribute="bottom" constant="22" id="2pW-57-nG1"/>
+                            <constraint firstItem="wWP-As-0Q3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="3xp-cD-5K5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iI3-pG-B61" secondAttribute="trailing" constant="16" id="8C0-ue-LMp"/>
+                            <constraint firstItem="iI3-pG-B61" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="8MB-IE-iWk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cvd-dy-tdk" secondAttribute="trailing" constant="16" id="IA8-Kh-r19"/>
+                            <constraint firstItem="8Yj-4k-IUJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Iar-bv-Bup"/>
+                            <constraint firstItem="gb3-8S-h30" firstAttribute="top" secondItem="cvd-dy-tdk" secondAttribute="bottom" constant="22" id="Xvm-mh-Vzu"/>
+                            <constraint firstItem="iI3-pG-B61" firstAttribute="top" secondItem="8Yj-4k-IUJ" secondAttribute="bottom" id="Zwx-Pi-mDj"/>
+                            <constraint firstItem="4GP-WM-jrp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cGm-N3-sWi"/>
+                            <constraint firstItem="4GP-WM-jrp" firstAttribute="top" secondItem="cvd-dy-tdk" secondAttribute="bottom" constant="22" id="cMm-gh-Mcr"/>
+                            <constraint firstItem="cvd-dy-tdk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="crF-FS-uj8"/>
+                            <constraint firstItem="gb3-8S-h30" firstAttribute="width" secondItem="4GP-WM-jrp" secondAttribute="width" id="jE0-Fu-Xtz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gb3-8S-h30" secondAttribute="trailing" constant="16" id="naY-Mo-fg3"/>
+                            <constraint firstItem="8Yj-4k-IUJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="p3Y-iZ-kq9"/>
+                            <constraint firstItem="gb3-8S-h30" firstAttribute="leading" secondItem="4GP-WM-jrp" secondAttribute="trailing" constant="13" id="s86-Wn-8iP"/>
+                            <constraint firstItem="wWP-As-0Q3" firstAttribute="top" secondItem="iI3-pG-B61" secondAttribute="bottom" constant="32" id="xQY-My-TL2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wWP-As-0Q3" secondAttribute="trailing" constant="16" id="yZa-Yi-1ie"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="hEe-6I-2jZ"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="wWP-As-0Q3" id="xIy-ct-BQc"/>
+                        <outlet property="passwordTextField" destination="cvd-dy-tdk" id="53u-TQ-elT"/>
+                        <segue destination="Gh6-cE-o4U" kind="show" identifier="toMain" id="nmZ-y3-Fir"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="31.934032983508249"/>
+        </scene>
+        <!--MainVC-->
+        <scene sceneID="qlk-mm-mJ1">
+            <objects>
+                <viewController id="Gh6-cE-o4U" customClass="MainVC" customModule="UberForDriver" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S7q-TP-zY9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p1c-Yf-7oa">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="barTintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="SinhalaSangamMN-Bold" family="Sinhala Sangam MN" pointSize="18"/>
+                                    <color key="textColor" red="0.0" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Drive" id="9Q8-B0-vgc">
+                                        <barButtonItem key="leftBarButtonItem" title="Sign Out" id="ztX-3z-vwf">
+                                            <connections>
+                                                <action selector="signOut:" destination="Gh6-cE-o4U" id="4zt-kO-aUy"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="EOX-VC-IOI">
+                                <rect key="frame" x="0.0" y="64" width="375" height="535"/>
+                            </mapView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2GG-pb-iRS">
+                                <rect key="frame" x="0.0" y="599" width="375" height="68"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="f8f-2f-KBg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SinhalaSangamMN-Bold" family="Sinhala Sangam MN" pointSize="20"/>
+                                <state key="normal" title="Cancel Ride"/>
+                                <connections>
+                                    <action selector="cancelRide:" destination="Gh6-cE-o4U" eventType="touchUpInside" id="aMz-9L-McO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.0" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="EOX-VC-IOI" firstAttribute="top" secondItem="p1c-Yf-7oa" secondAttribute="bottom" id="3Z9-MJ-hHR"/>
+                            <constraint firstItem="2GG-pb-iRS" firstAttribute="top" secondItem="EOX-VC-IOI" secondAttribute="bottom" id="5D8-LJ-x17"/>
+                            <constraint firstItem="2GG-pb-iRS" firstAttribute="leading" secondItem="2F8-2j-xGD" secondAttribute="leading" id="EQ0-hN-RTB"/>
+                            <constraint firstItem="EOX-VC-IOI" firstAttribute="trailing" secondItem="2F8-2j-xGD" secondAttribute="trailing" id="LiW-OD-dVc"/>
+                            <constraint firstItem="EOX-VC-IOI" firstAttribute="leading" secondItem="2F8-2j-xGD" secondAttribute="leading" id="VFU-7u-hYF"/>
+                            <constraint firstItem="p1c-Yf-7oa" firstAttribute="top" secondItem="2F8-2j-xGD" secondAttribute="top" id="bNK-z6-CrQ"/>
+                            <constraint firstItem="p1c-Yf-7oa" firstAttribute="leading" secondItem="2F8-2j-xGD" secondAttribute="leading" id="cj0-oD-sIa"/>
+                            <constraint firstItem="2GG-pb-iRS" firstAttribute="trailing" secondItem="2F8-2j-xGD" secondAttribute="trailing" id="dLw-lE-hJQ"/>
+                            <constraint firstItem="2GG-pb-iRS" firstAttribute="bottom" secondItem="2F8-2j-xGD" secondAttribute="bottom" id="duk-Bc-jaX"/>
+                            <constraint firstItem="p1c-Yf-7oa" firstAttribute="trailing" secondItem="2F8-2j-xGD" secondAttribute="trailing" id="mjT-Bu-V83"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2F8-2j-xGD"/>
+                    </view>
+                    <connections>
+                        <outlet property="driveButton" destination="2GG-pb-iRS" id="pvk-0N-hYI"/>
+                        <outlet property="mapView" destination="EOX-VC-IOI" id="qLq-qa-GYv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8yA-bL-dfc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="805.60000000000002" y="31.934032983508249"/>
+        </scene>
+    </scenes>
+</document>
